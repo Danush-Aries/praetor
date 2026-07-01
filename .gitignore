@@ -1,0 +1,23 @@
+# venvs
+.venv/
+venv/
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+dist/
+build/
+# praetor runtime output
+praetor-audit.jsonl
+praetor-report/
+*.local.yaml
+scope.yaml
+# secrets / keys
+.env
+*.key
+# os
+.DS_Store

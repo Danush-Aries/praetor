@@ -1,0 +1,16 @@
+# Full-chain lab demo scope. Targets are PRAETOR's built-in deterministic
+# simulated hosts (*.lab) — no network, no real systems touched. This is the
+# scope used for the demo GIF: recon -> scan -> exploit -> loot end to end.
+name: "praetor-lab"
+mode: lab
+authorized: true
+max_phase: loot
+allow_destructive: true      # lab only — permits the simulated exploit/loot steps
+allow_hosts: []
+allow_domains:
+  - ".lab"                   # any *.lab host (all simulated)
+allow_cidrs: []
+deny_hosts: []
+targets:
+  - metasploitable.lab
+  - dvwa.lab

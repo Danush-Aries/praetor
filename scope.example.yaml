@@ -1,0 +1,38 @@
+# PRAETOR engagement scope.
+# This file IS the authorization boundary. PRAETOR refuses to touch any target
+# that does not match the allowlist below, and refuses to run at all unless
+# `authorized: true` is present.
+
+name: "local-lab-demo"
+
+# lab       -> full autonomous exploit chain permitted against in-scope targets
+# authorized-> conservative, scope-locked; destructive actions stay off
+mode: lab
+
+# EXPLICIT ATTESTATION. By setting this to true you confirm you have permission
+# to test every target listed below. PRAETOR will not run without it.
+authorized: true
+
+# Highest phase PRAETOR may advance to: recon | scan | exploit | loot | report
+max_phase: exploit
+
+# Destructive actions (writes/deletes/submits) require BOTH this flag and,
+# unless --yes is passed, an interactive confirmation.
+allow_destructive: false
+
+# --- allowlist (a target must match at least one) ---
+allow_hosts:
+  - scanme.nmap.org        # nmap's public, test-permitted host
+  - localhost
+allow_domains: []          # e.g. ".example.com" matches example.com + subdomains
+allow_cidrs:
+  - 127.0.0.0/8
+  - 10.0.2.0/24            # typical Metasploitable/VirtualBox lab net
+
+# --- always-block (wins over allow) ---
+deny_hosts: []
+
+# --- the targets to assess ---
+targets:
+  - scanme.nmap.org
+  - http://localhost:8080

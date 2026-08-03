@@ -115,3 +115,12 @@ PRAETOR is a **defensive-minded offensive tool** built for authorized engagement
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+
+---
+
+<p align="center">
+  <b>⭐ If this project helps you, star it</b> — stars are how open-source tools get found, and every one directly supports more development.
+  <br/><sub>· Found a bug? Open an <a href="https://github.com/Danush-Aries/praetor/issues">issue</a> · Want to chat? <a href="https://github.com/Danush-Aries/praetor/discussions">Discussions</a> · Contribute? See <a href="https://github.com/Danush-Aries/praetor/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a> ·</sub>
+</p>
+

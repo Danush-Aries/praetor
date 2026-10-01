@@ -216,7 +216,7 @@ def render_sarif(state: EngagementState) -> dict[str, Any]:
                     "driver": {
                         "name": _TOOL_NAME,
                         "version": _TOOL_VERSION,
-                        "informationUri": "https://github.com/Dhanush-Aries/praetor",
+                        "informationUri": "https://github.com/Danush-Aries/praetor",
                         "rules": rules,
                     }
                 },

@@ -51,7 +51,7 @@ The **blue-team mirror** is the headline: PRAETOR is simultaneously an attacker 
 ## Quickstart
 
 ```bash
-git clone https://github.com/Dhanush-Aries/praetor && cd praetor
+git clone https://github.com/Danush-Aries/praetor && cd praetor
 uv venv && uv pip install -e .          # or: pip install -e .
 
 # 1. See what tools you have
